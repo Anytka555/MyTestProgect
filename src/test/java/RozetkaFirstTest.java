@@ -29,7 +29,7 @@ public class RozetkaFirstTest {
 
     }
 
-    public void waitForElementVisibility(String titleOfFirstItem) {
+    public void waitForElementVisibility() {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("//a[@class=\"goods-tile__heading ng-star-inserted\"]")));
