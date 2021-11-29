@@ -6,8 +6,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import static org.junit.Assert.*;
+
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
@@ -17,6 +20,7 @@ public class RozetkaFirstTest {
     @BeforeMethod
 
     public void before() {
+
         System.setProperty("webdriver.chrome.driver", "/Users/annaluchenkova/IdeaProjects/MyTestProgect/src/test/TestSuites/chromedriver 2");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -25,7 +29,6 @@ public class RozetkaFirstTest {
 
     }
 
-    // titleOfFirstItem
     public void waitForElementVisibility(String titleOfFirstItem) {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -48,6 +51,7 @@ public class RozetkaFirstTest {
     }
 
     @AfterMethod
+
     public void after() {
 
         if (driver != null) {
